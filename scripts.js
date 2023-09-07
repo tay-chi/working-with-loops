@@ -1,8 +1,10 @@
 /****************** Exercise 1 ********************/
 
 // Use a for loop to print numbers from 1 to 10
-  
 
+for (let num = 1; num<=10; num++) {
+    console.log(num);
+};
 
 
 
@@ -10,6 +12,10 @@
 /****************** Exercise 2 ********************/
 
 // Create a for loop that logs the numbers 4 to 156 to the console.
+
+for (let num2 = 4; num2 <= 156; num2++) {
+    console.log(num2);
+};
 
 
 
@@ -23,6 +29,11 @@
 // Given the following array, log the sentence, "I really like the color: [COLOR]" for each of the items.
 const favoriteColors = ["red", "blue", "purple", "yellow"];
 
+for (let i = 0; i < favoriteColors.length; i++) {
+    let color = favoriteColors[i];
+    console.log(`I really like the color ${color}`);
+};
+
 
 
 
@@ -35,7 +46,13 @@ const favoriteColors = ["red", "blue", "purple", "yellow"];
 
 // Use a for loop to calculate the sum of even numbers from 2 to 20
 
+let num3 = 2
+let sum = 0
 
+for (let i = num3; i <= 20; i += 2) {
+sum += i;
+};
+console.log(`The sum of the even numbers is ${sum}`);
 
 
 
@@ -47,6 +64,12 @@ const inputString = "hello";
 let reversedString = "";
 // Output should be "olleh"
 
+for (let i = inputString.length - 1; i >= 0; i --) {
+reversedString += inputString[i];
+
+};
+
+console.log(reversedString);
 
 
 
@@ -64,8 +87,12 @@ let reversedString = "";
 const num = 5; // The number for which we want to calculate the factorial
 let factorial = 1;
 
-
+for (let i = 1; i <= num; i++ ) {
+    factorial  = factorial * i;
+    console.log(factorial, `*`,  i);
+}
 // Calculate the factorial of a number using a for loop
+
 
 
 
@@ -77,7 +104,7 @@ let factorial = 1;
 
 
 // Initial investment amount
-const initialAmount = 1000;
+let initialAmount = 1000;
 
 // Annual interest rate (in decimal form)
 const annualInterestRate = 0.05;
@@ -91,3 +118,15 @@ console.log(`Number of Years: ${years}`);
 
 // Calculate the interest on an investment using a for loop
 
+
+
+
+
+
+let updatedBalance = initialAmount * annualInterestRate;
+
+for (let i = 1; i <= 10; i++) {
+
+    
+
+}
