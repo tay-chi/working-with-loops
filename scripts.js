@@ -118,15 +118,12 @@ console.log(`Number of Years: ${years}`);
 
 // Calculate the interest on an investment using a for loop
 
+for (let i = 1; i <= years; i++) {
+    const interest = initialAmount * annualInterestRate;
+    initialAmount += interest;
+    console.log(`Year ${i}: $${initialAmount.toFixed(2)}`);
+  };
 
 
 
 
-
-let updatedBalance = initialAmount * annualInterestRate;
-
-for (let i = 1; i <= 10; i++) {
-
-    
-
-}
